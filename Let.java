@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Let{
+public class Tictactoe{
 
     public static final String START1 = "Welcome to X's and O's";
     public static final String START2 = "Click on a star to begin the game as X";
@@ -20,7 +20,7 @@ public class Let{
 
     public static void main(String[] args){
     
-        Let gui = new Let();
+        Tictactoe gui = new Tictactoe();
         gui.go();
     
     }
