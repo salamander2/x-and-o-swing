@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Tictactoe2{
+public class Tictactoe{
 
 	final static int XX = -1;
 	final static int OO = 1;	//capital o, not zero
@@ -20,13 +20,13 @@ public class Tictactoe2{
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() { 
-				new Tictactoe2(); 
+				new Tictactoe(); 
 			}
 		});
 	}
 
 
-	Tictactoe2() {
+	Tictactoe() {
 
 		JFrame frame = new JFrame("TicTacToe");			
 		Container content = frame.getContentPane();
