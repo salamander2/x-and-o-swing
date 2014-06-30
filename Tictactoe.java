@@ -2,6 +2,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**** A TicTacToe game using JLabels.  
+ * Forked from hiragana/x-and-o-swing
+ *    by Salamander2		**********/
+ 
 public class Tictactoe{
 
 	final static int XX = -1;
@@ -58,7 +62,6 @@ public class Tictactoe{
 		btnPanel.add(btnRestart);
 		btnPanel.setBackground(Color.GRAY);
 		content.add(BorderLayout.SOUTH, btnPanel);
-		
 
 		//set up the grid panel in the middle of the screen (borderlayout.center)
 		JPanel gridPanel = new JPanel(new GridLayout(3,3,3,3));
@@ -109,8 +112,7 @@ public class Tictactoe{
 			grid[loc].setText("O");
 			lblStart.setText("Score: X=" + xwins + "   O=" + owins + "      Turn=X");
 			player = XX;
-		}
-		else {			
+		} else {			
 			grid[loc].setText("X");
 			lblStart.setText("Score: X=" + xwins + "   O=" + owins + "      Turn=O");
 			player = OO;
@@ -118,8 +120,7 @@ public class Tictactoe{
 	}	
 		
 	public void checkWin(){
-				
-		//check for a win
+		
 		//check rows
 		int win = 0;
 		int total = 0;
