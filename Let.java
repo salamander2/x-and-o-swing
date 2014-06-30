@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+/**** This is in the file called Let.java.  It is the starting point for my program in the file Tictactoe.java *****/
+
 public class Tictactoe{
 
     public static final String START1 = "Welcome to X's and O's";
